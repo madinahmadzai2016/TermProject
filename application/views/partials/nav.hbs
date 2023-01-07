@@ -1,0 +1,17 @@
+    <nav>
+        {{#if logged}}
+        <a href="" id="logout-button" class="">log out</a>
+        <a href="/" class="">Home</a>
+        <a href="/postimage" class="">Post</a>
+      
+        <div class="">
+            <input id="search" type="searchbar" placeholder="Search Here">
+        </div>
+    </nav>
+{{else}}
+        <a href="/login" class="">Log In</a>
+        <a href="/registration" class="">Register</a>
+        
+{{/if}}
+
+</nav>

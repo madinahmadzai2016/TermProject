@@ -1,0 +1,31 @@
+<div class="post-container container">
+    <div class="site-header shadow">
+        <h2>Post Image</h2>
+    </div>
+    <form id="posting-image" class="site-input shadow" method="POST" enctype="multipart/form-data"
+        action='/posts/createPost'>
+        <div id="post-grid-container">
+            <label id="title-label" for="post-title">Title of Post:</label>
+            <input id="post-title" type="text" placeholder="Post Title" name="title" required>
+            <br />
+            <label id="desc-label" for="post=desc">Post Description:</label>
+            <input id="post-desc" type="text" placeholder="Post Description here..." name="description" required>
+            <br />
+            <label id="upload-label">Upload Image:</label>
+            <input id="img-select" type="file" name="uploadImage" required>
+            <br />
+        </div>
+        <label class="reg-agreement">Accept
+            <a>Acceptable Use Policy</a>
+            for uploading images
+            <input type="checkbox">
+        </label>
+        <br />
+        <button class="submit-form" type="submit">Post Image</button>
+    </form>
+</div>
+<footer id="footer">
+    <span id="footer-name">Madina Ahmadzai @ 2021 </span>
+    <a id="email-link" href="mailto:mahmadzai@mail.sfsu.edu">Contact Owner</a>
+</footer>
+</div>

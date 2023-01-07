@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <link rel="icon" href="../public/favicon.ico" sizes="70x70" type="image/ico">
+    <link rel="stylesheet" type = "text/css" href="../public/stylesheets/form.css">
+    <script defer src="/public/fronted.js"></script>    
+    
+  </head>
+  <body>
+    <div class = "grid-container-home shadow">
+      {{!-- {{log this}} --}}
+    {{> nav}}
+
+    {{{body}}}
+
+
+    </div>
+    
+    {{#if logged}}
+  <script>
+    let ele = document.getElementById('logout-button')
+    if (ele) {
+      ele.onclick = (even) => {
+        fetch('/users/logout', { method: "POST" })
+          .then((data) => {
+            location.replace('/');
+          })
+
+      }
+    }
+  </script>
+  {{/if}}
+
+  </body>
+    
+
+ 
+</html>
+
+    
+    
+    
